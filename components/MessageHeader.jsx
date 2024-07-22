@@ -12,7 +12,7 @@ import {
     getFirestore, collection, getDocs, doc, setDoc, Timestamp, onSnapshot,
     getDoc, deleteDoc, updateDoc, serverTimestamp, query, arrayUnion, arrayRemove,
     orderBy} from "firebase/firestore";
-import app, { db, storage } from '/Users/youssipro/youssi_chat/firebase.js';
+import app, { db, storage } from '../firebase';
 
 const MessageHeader = ({handleSearchChange}) => {
 

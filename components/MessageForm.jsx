@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 
 import { useSelector } from 'react-redux';
-import app, { db, storage } from '/Users/youssipro/youssi_chat/firebase.js';
+import app, { db, storage } from '../firebase';
 import { uploadBytesResumable, getDownloadURL, ref as strRef } from 'firebase/storage';
 // import { ref, set, remove, push, child, serverTimestamp } from "firebase/database";
 import { getFirestore, collection, doc, setDoc, serverTimestamp, updateDoc, arrayUnion, arrayRemove, } from "firebase/firestore";

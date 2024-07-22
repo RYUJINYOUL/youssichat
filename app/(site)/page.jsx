@@ -6,11 +6,11 @@ import MessageForm from '../../components/MessageForm.jsx';
 
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
-import app from '/Users/youssipro/youssi_chat/firebase.js';
+import app from '../../firebase.js';
 import Message from '../../components/Message.jsx'
 import { getFirestore, collection, doc, setDoc, onSnapshot, query} from "firebase/firestore";
-import { setUserPosts } from '/Users/youssipro/youssi_chat/store/chatRoomSlice.js';
-import { TbWiperWash } from 'react-icons/tb';
+import { setUserPosts } from '../../store/chatRoomSlice.js';
+
 
 const Page = () => {
   const db2 = getFirestore(app);

@@ -7,13 +7,6 @@ import { Provider } from "react-redux";
 import { store } from '../store'
 import Sidebar from '@/components/Sidebar'
 
-
-import { getAuth, onAuthStateChanged } from 'firebase/auth';
-import { useDispatch } from "react-redux";
-import { clearUser, setUser } from "/Users/youssipro/youssi_chat/store/userSlice.js";
-import app from "/Users/youssipro/youssi_chat/firebase.js";
-import { Routes, Route, useNavigate } from "react-router-dom";
-
 const inter = Inter({ subsets: ["latin"] });
 
 // export const metadata: Metadata = {

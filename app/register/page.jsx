@@ -6,7 +6,7 @@ import { getAuth, createUserWithEmailAndPassword, updateProfile } from "firebase
 import app, { db } from '../../firebase';
 import md5 from 'md5';
 import { useDispatch } from 'react-redux';
-import { clearUser, setUser } from "/Users/youssipro/youssi_chat/store/userSlice.js";
+import { clearUser, setUser } from "../../store/userSlice.js";
 
 import { 
   getFirestore, collection, getDocs, doc, setDoc, Timestamp, 

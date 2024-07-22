@@ -7,8 +7,8 @@ import Button from 'react-bootstrap/Button';
 import { useDispatch, useSelector } from 'react-redux';
 import { getFirestore, collection, doc, setDoc, onSnapshot, query} from "firebase/firestore";
 import { getAuth } from 'firebase/auth';
-import app from '/Users/youssipro/youssi_chat/firebase.js';
-import { setCurrentChatRoom, setPrivateChatRoom } from '/Users/youssipro/youssi_chat/store/chatRoomSlice.js';
+import app from '../firebase';
+import { setCurrentChatRoom, setPrivateChatRoom } from '../store/chatRoomSlice.js';
 
 
 const ChatRooms = () => {

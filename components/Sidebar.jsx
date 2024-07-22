@@ -4,8 +4,8 @@ import Navigator from './elements/Navigator'
 import { useEffect } from 'react';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import { useDispatch } from "react-redux";
-import { clearUser, setUser } from "/Users/youssipro/youssi_chat/store/userSlice.js";
-import app from "/Users/youssipro/youssi_chat/firebase.js";
+import { clearUser, setUser } from "../store/userSlice.js";
+import app from "../firebase";
 import { useRouter } from "next/navigation";
 import ChatRooms from './ChatRooms';
 
