@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: "충주사랑방",
 };
 
-const layout = ({ children }) => {
+const layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div>
       {children}

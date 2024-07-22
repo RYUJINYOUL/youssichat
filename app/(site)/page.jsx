@@ -46,7 +46,8 @@ const Page = () => {
   const addTypingListeners = async (chatRoomId) => {
     const typingQuery = doc(db2, "typing", chatRoomId);
     await onSnapshot(typingQuery, (snapshot) => { // <---- 
-      if (snapshot.data().typing.length > 0) {
+
+      if (snapshot.data()?.typing.length > 0) {
         const chatRoomIds = snapshot.data().typing;
         setTypingUsers(chatRoomIds); 
        } else {
