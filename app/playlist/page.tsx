@@ -1,10 +1,10 @@
 import React from 'react'
 
-const page = (props) => {
-    console.log(props);
+const page = () => {
+ 
   return (
     <div>
-      playlist {props.searchParams.list}
+      playlist
     </div>
   )
 }
